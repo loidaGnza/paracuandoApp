@@ -20,7 +20,7 @@ export default function Marca() {
       <div>
         {brands.map((brand) => (
           <p key={brand.brandID}>
-            <Link href={`/Marca/${brand.brandID}`}>Brand: {brand.brandID}</Link>
+            <Link href={`/marca/${brand.brandID}`}>Brand: {brand.brandID}</Link>
           </p>
         ))}
       </div>

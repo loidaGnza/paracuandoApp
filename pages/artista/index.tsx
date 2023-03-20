@@ -19,7 +19,7 @@ export default function Index() {
       <div>
         {artists.map((artist) => (
           <p key={artist.artistID}>
-            <Link href={`/event/${artist.artistID}`}>
+            <Link href={`/artista/${artist.artistID}`}>
               Artist: {artist.artistID}
             </Link>
           </p>
