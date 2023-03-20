@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Logo from '../components/assets/logo/Logo';
 import { Layout } from '../components/layout/Layout';
 import { useCategories } from '../lib/services/categories.services';
-
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
@@ -27,10 +26,10 @@ const Home: NextPageWithLayout = () => {
             <Link href={'/category/marcas-y-tiendas'}>
               <button>Marcas y tiendas</button>
             </Link>
-            <Link href={'/category/marcas-y-tiendas'}>
+            <Link href={'/category/artistas-y-conciertos'}>
               <button>Artistas y conciertos</button>
             </Link>
-            <Link href={'/category/marcas-y-tiendas'}>
+            <Link href={'/category/torneos'}>
               <button>Torneos</button>
             </Link>
           </div>
