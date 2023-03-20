@@ -12,3 +12,5 @@ export const SearchInfoPage: NextPageWithLayout = () => {
 SearchInfoPage.getLayout = (page) => {
   return <Layout>{page}</Layout>;
 };
+
+export default SearchInfoPage;

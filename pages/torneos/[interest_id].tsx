@@ -4,7 +4,6 @@ import { NextPageWithLayout } from '../page';
 
 export const TournamentPage: NextPageWithLayout = () => {
   const router = useRouter();
-  console.log(router);
   const { interest_id } = router.query;
   return (
     <div>

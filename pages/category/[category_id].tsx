@@ -4,7 +4,7 @@ import { NextPageWithLayout } from '../page';
 
 export const CategoryPage: NextPageWithLayout = () => {
   const router = useRouter();
-  console.log(router);
+
   const { category_id } = router.query;
   return (
     <div>

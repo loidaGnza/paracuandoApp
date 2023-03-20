@@ -5,7 +5,6 @@ import { NextPageWithLayout } from '../page';
 export const ArtistsPage: NextPageWithLayout = () => {
   const router = useRouter();
   const { artist_id } = router.query;
-  console.log(router);
   return (
     <div>
       <h1 className="text-2x1">
