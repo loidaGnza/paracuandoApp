@@ -2,23 +2,20 @@ import { useRouter } from 'next/router';
 import { Layout } from '../../components/layout/Layout';
 import { NextPageWithLayout } from '../page';
 
-export const CategoryPage: NextPageWithLayout = () => {
+export const ArtistsPage: NextPageWithLayout = () => {
   const router = useRouter();
-
-  const { category_id } = router.query;
+  const { artist_id } = router.query;
   return (
     <div>
-      <h1 className="text-2xl">
-        {' '}
+      <h1 className="text-2x1">
         this page is{' '}
-        <span className="text-app-red text-6xl">{category_id}</span>
+        <span className="text-app-red text-6xl"> {artist_id} </span>
       </h1>
     </div>
   );
 };
 
-CategoryPage.getLayout = (page) => {
+ArtistsPage.getLayout = (page) => {
   return <Layout>{page}</Layout>;
 };
-
-export default CategoryPage;
+export default ArtistsPage;

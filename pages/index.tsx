@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Logo from '../components/assets/logo/Logo';
 import { Layout } from '../components/layout/Layout';
 import { useCategories } from '../lib/services/categories.services';
-
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
@@ -24,13 +23,13 @@ const Home: NextPageWithLayout = () => {
             placeholder="¿Qué quieres ver en tu ciudad?"
           />
           <div className="flex items-center justify-center gap-2">
-            <Link href={'/category/marcas-y-tiendas'}>
+            <Link href={'/marca'}>
               <button>Marcas y tiendas</button>
             </Link>
-            <Link href={'/category/marcas-y-tiendas'}>
+            <Link href={'/artista'}>
               <button>Artistas y conciertos</button>
             </Link>
-            <Link href={'/category/marcas-y-tiendas'}>
+            <Link href={'/torneos'}>
               <button>Torneos</button>
             </Link>
           </div>
