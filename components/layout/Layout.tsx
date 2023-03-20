@@ -1,18 +1,20 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import { Footer } from '../navigation/footer/Footer';
+import Header from '../navigation/header/Header';
 
-type AppProps = {
+interface ILayout {
   children: React.ReactNode;
-};
-
-export default function Layout({ children }: AppProps) {
-  return (
-    <div>
-      <Header />
-      {children}
-      <Footer style="" />
-    </div>
-  );
 }
+
+export const Layout: React.FC<ILayout> = ({ children }) => {
+  return (
+    <>
+      <div className="overflow-x-hidden">
+        <Header />
+        <main className="app-container ">{children}</main>
+        <Footer />
+      </div>
+    </>
+  );
+};
 
